@@ -1,0 +1,32 @@
+{
+    "title": "Change from caps_lock to control (if held) or escape (if unheld)",
+    "rules": [
+        {
+            "manipulators": [
+                {
+                    "description": "Change from caps_lock to control (if held) or escape (if unheld)",
+                    "type": "basic",
+                    "from": {
+                        "key_code": "caps_lock",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_control",
+                            "lazy": true
+                        }
+                    ],
+                    "to_if_alone": [
+                        {
+                            "key_code": "escape"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
