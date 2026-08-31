@@ -1,29 +1,20 @@
 {
-	"title": "Change from right_command to control-b tmux prefix",
-	"rules": [
-		{
-			"manipulators": [
-				{
-					"description": "Change from right_command to ctrl-b tmux prefix",
-					"from": {
-						"key_code": "right_command",
-						"modifiers": {
-							"optional": [
-								"any"
-							]
-						}
-					},
-					"to": [
-						{
-							"modifiers": [
-								"control"
-							],
-							"key_code": "b"
-						}
-					],
-					"type": "basic"
-				}
-			]
-		}
-	]
+    "description": "Change from right_command to ctrl-b tmux prefix",
+    "manipulators": [
+        {
+            "from": {
+                "key_code": "right_command",
+                "modifiers": {
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "b",
+                    "modifiers": ["control"]
+                }
+            ],
+            "type": "basic"
+        }
+    ]
 }
